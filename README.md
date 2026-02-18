@@ -197,6 +197,209 @@ Then:
 
 git add .
 git commit -m "Resolved merge conflict"
+git config --global user.name " "
+git config --global user.email " "
+A) Setup & Configuration
+
+git --version
+
+Checks the installed Git version.
+
+git config --global user.name "Your Name"
+
+Sets your Git username globally.
+
+git config --global user.email you@example.com
+
+Sets your Git email globally.
+
+
+---
+
+B) Create or Clone Repositories
+
+git init
+
+Initializes a new Git repository in the current directory.
+
+git clone <repository-url>
+
+Creates a copy of an existing remote repository.
+
+
+---
+
+C) Check Status
+
+git status
+
+Displays the state of working directory and staging area.
+
+
+---
+
+D) Add Files (Staging Area)
+
+git add file.txt
+
+Adds a specific file to the staging area.
+
+git add .
+
+Adds all files to the staging area.
+
+
+---
+
+E) Commit Changes
+
+git commit -m "Message"
+
+Commits staged changes with a message.
+
+git commit --amend
+
+Modifies the last commit.
+
+
+---
+
+F) View History
+
+git log
+
+Shows commit history.
+
+git log --oneline
+
+Shows compact commit history.
+
+git log --oneline --graph --all
+
+Shows graphical representation of all branches.
+
+
+---
+
+G) Branching
+
+git branch
+
+Lists all branches.
+
+git branch <name>
+
+Creates a new branch.
+
+git checkout <name>
+
+Switches branch.
+
+git checkout -b <name>
+
+Creates and switches to a new branch.
+
+
+---
+
+H) Merging
+
+git merge <branch>
+
+Merges the specified branch into current branch.
+
+
+---
+
+I) Remote Repository Commands
+
+git remote add origin <url>
+
+Adds a remote repository.
+
+git remote -v
+
+Displays remote repository URLs.
+
+git push origin main
+
+Pushes local commits to remote main branch.
+
+git push -u origin main
+
+Pushes and sets upstream branch.
+
+git pull origin main
+
+Fetches and merges changes from remote main branch.
+
+git fetch
+
+Downloads changes from remote without merging.
+
+
+---
+
+J) Undo / Reset / Restore
+
+git restore file.txt
+
+Restores file to last committed state.
+
+git restore --staged file.txt
+
+Removes file from staging area.
+
+git reset --soft HEAD~1
+
+Undo last commit, keep changes staged.
+
+git reset --mixed HEAD~1
+
+Undo last commit, unstage changes.
+
+git reset --hard HEAD~1
+
+Undo last commit and delete changes.
+
+git revert <commit-id>
+
+Creates a new commit that undoes specified commit.
+
+
+---
+
+K) Stash (Temporary Save)
+
+git stash
+
+Temporarily saves uncommitted changes.
+
+git stash list
+
+Lists all stashed changes.
+
+git stash apply
+
+Applies latest stash without deleting it.
+
+git stash pop
+
+Applies and removes latest stash.
+
+
+---
+
+L) Tagging
+
+git tag v1.0
+
+Creates a tag.
+
+git push origin v1.0
+
+Pushes tag to remote repository
+
 
 
 ---
